@@ -3,6 +3,7 @@
 from i3ipc.aio import Connection 
 from dataclasses import dataclass
 from i3ipc.replies import WorkspaceReply
+import asyncio
 
 @dataclass
 class CurrentState():
@@ -26,5 +27,4 @@ async def main():
     )
 
 if __name__ == "__main__":
-    import asyncio
     asyncio.run(main())
